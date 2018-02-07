@@ -26,3 +26,15 @@ Create an inventory file locally (e.g. `./inventory` which has been ignored in .
 <ip/DNS>
 ...
 ```
+
+Test the connectivity to these servers: `ansible <inventory-group-name> -i <inventory-file> -m win_ping` which should result in something like:
+```
+<ip-address> | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+<ip-address> | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+```
