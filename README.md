@@ -11,6 +11,9 @@ Or alternatively provision SQL servers manually using [AWS supplied AMIs](https:
 ![arch](https://docs.aws.amazon.com/quickstart/latest/sql/images/sql-server-on-aws-architecture.png)
 
 # Ansible
+## Target Servers
+Be sure to prep windows servers for Ansible by following [these instructions](http://docs.ansible.com/ansible/latest/intro_windows.html#windows-system-prep).
+
 ## Credentials
 Copy [group_vars/tmobile-manual.yml.example](./group_vars/tmobile-manual.yml.example) to `group_vars/tmobile-manual.yml` and fill in the necessary credentials.
 
