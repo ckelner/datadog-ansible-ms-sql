@@ -3,6 +3,9 @@ Datadog + Ansible for Windows Servers running MS SQL
 
 # Provision
 [AWS Quickstart](https://docs.aws.amazon.com/quickstart/latest/sql/welcome.html)
+Or alternatively provision SQL servers manually using [AWS supplied AMIs](https://aws.amazon.com/windows/resources/amis/).
+
+- Be sure to open port `3389` (RDP) and `5986` (Ansible win_ping) to your IP.
 
 # Architecture
 ![arch](https://docs.aws.amazon.com/quickstart/latest/sql/images/sql-server-on-aws-architecture.png)
