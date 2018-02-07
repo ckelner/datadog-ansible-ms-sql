@@ -1,0 +1,9 @@
+init_config:
+
+instances:
+  - class: Win32_PerfRawData_SQLSERVERAGENT_SQLAgentJobs
+    metrics:
+      - [Failedjobs, sqlserver.failed_jobs, gauge]
+    filters:
+      - Name: _Total
+    tag_by: Name
