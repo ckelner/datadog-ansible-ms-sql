@@ -1,3 +1,4 @@
+# FYI this don't do diddly right now, #kelnerhax
 - name: test script module
   hosts: tmobile-manual
   tasks:
