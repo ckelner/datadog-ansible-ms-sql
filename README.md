@@ -1,5 +1,7 @@
+# THIS IS A WORK IN PROGRESS - DOES NOT WORK AT THIS TIME
+
 # datadog-ansible-ms-sql
-Datadog + Ansible for Windows Servers running MS SQL
+Datadog + Ansible for Windows Servers running MS SQL.
 
 # Provision
 [AWS Quickstart](https://docs.aws.amazon.com/quickstart/latest/sql/welcome.html)
