@@ -13,6 +13,8 @@ Or alternatively provision SQL servers manually using [AWS supplied AMIs](https:
 ![arch](https://docs.aws.amazon.com/quickstart/latest/sql/images/sql-server-on-aws-architecture.png)
 
 # Ansible
+- http://docs.ansible.com/ansible/latest/intro_windows.html#windows-system-prep
+
 ## Target Servers
 Be sure to prep windows servers for Ansible by following [these instructions](http://docs.ansible.com/ansible/latest/intro_windows.html#windows-system-prep).
 
