@@ -44,6 +44,8 @@ Test the connectivity to these servers: `ansible <inventory-group-name> -i <inve
 ```
 
 # Generate Load
+There's a few scripts in the repo to do random things too. #TODO
+
 - https://github.com/ErikEJ/SqlQueryStress
 - https://www.brentozar.com/archive/2015/05/how-to-fake-load-tests-with-sqlquerystress/
 - http://use-the-index-luke.com/sql/example-schema/sql-server/performance-testing-scalability
