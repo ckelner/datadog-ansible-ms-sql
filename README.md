@@ -4,8 +4,11 @@
 Datadog + Ansible for Windows Servers running MS SQL.
 
 # Provision
-[AWS Quickstart](https://docs.aws.amazon.com/quickstart/latest/sql/welcome.html)
-Or alternatively provision SQL servers manually using [AWS supplied AMIs](https://aws.amazon.com/windows/resources/amis/).
+- [AWS Quickstart](https://docs.aws.amazon.com/quickstart/latest/sql/welcome.html)
+  - Be sure to follow https://docs.aws.amazon.com/quickstart/latest/sql/step3.html
+    - If you use defaults, when you use the RDGW you need to connect as `example\Admin`
+
+- Or alternatively provision SQL servers manually using [AWS supplied AMIs](https://aws.amazon.com/windows/resources/amis/).
 
 - Be sure to open port `3389` (RDP) and `5986` (Ansible win_ping) to your IP.
 
@@ -42,6 +45,9 @@ Test the connectivity to these servers: `ansible <inventory-group-name> -i <inve
     "ping": "pong"
 }
 ```
+
+# SQL Server
+Failover: https://docs.aws.amazon.com/quickstart/latest/sql/step4.html
 
 # Generate Load
 There's a few scripts in the repo to do random things too. #TODO
