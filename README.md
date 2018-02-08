@@ -40,3 +40,6 @@ Test the connectivity to these servers: `ansible <inventory-group-name> -i <inve
     "ping": "pong"
 }
 ```
+
+# Generate Load
+https://github.com/ErikEJ/SqlQueryStress
