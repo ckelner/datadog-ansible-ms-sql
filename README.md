@@ -44,4 +44,4 @@ Test the connectivity to these servers: `ansible <inventory-group-name> -i <inve
 ```
 
 # Generate Load
-https://github.com/ErikEJ/SqlQueryStress
+- https://github.com/ErikEJ/SqlQueryStress
