@@ -1,7 +1,11 @@
 # TODO: get from local machine
+# NOTE: For now set this thing BEFORE you run the script
+# TODO: Ansible  needs to set these things
 # $env:DD_API_KEY = "<your-api-key-goes-here>"
+
 # NOTE: You likely want to change the user 'datadog' and password 'D@tadog' to something more secure
 # TODO: Get username and password from environment variables
+# TODO: Ansible  needs to set these things
 $USERNAME_DEFAULT = "datadog"
 $PASSWORD_DEFAULT = "D@tadog"
 
@@ -27,6 +31,12 @@ Start-Sleep -s 60
 
 stop-service datadogagent
 
+# TODO: Ansible needs to upload these things, but for now we gonna download em yeah?
+# gonna use curl... its there eh!
+curl -OutFile C:\vm_info\wmi_check.yaml https://raw.githubusercontent.com/ckelner/datadog-ansible-ms-sql/master/wmi_check.yaml
+curl -OutFile C:\vm_info\sqlserver.yaml https://raw.githubusercontent.com/ckelner/datadog-ansible-ms-sql/master/sqlserver.yaml
+
+# This really pisses off the windows UI thingy, I don't know why
 Copy-Item -Path C:\vm_info\wmi_check.yaml -Destination C:\ProgramData\Datadog\conf.d\wmi_check.yaml
 (Get-Content C:\vm_info\sqlserver.yaml).replace("%%USERNAME%%", "${USERNAME_DEFAULT}") | Set-Content C:\vm_info\sqlserver.yaml
 (Get-Content C:\vm_info\sqlserver.yaml).replace("%%PASSWORD%%", "${PASSWORD_DEFAULT}") | Set-Content C:\vm_info\sqlserver.yaml
