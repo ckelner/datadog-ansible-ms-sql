@@ -36,7 +36,7 @@ stop-service datadogagent
 curl -OutFile C:\vm_info\wmi_check.yaml https://raw.githubusercontent.com/ckelner/datadog-ansible-ms-sql/master/wmi_check.yaml
 curl -OutFile C:\vm_info\sqlserver.yaml https://raw.githubusercontent.com/ckelner/datadog-ansible-ms-sql/master/sqlserver.yaml
 
-# This really pisses off the windows UI thingy, I don't know why
+# This really makes the windows UI DD app broken, I don't know why -- TODO!
 Copy-Item -Path C:\vm_info\wmi_check.yaml -Destination C:\ProgramData\Datadog\conf.d\wmi_check.yaml
 (Get-Content C:\vm_info\sqlserver.yaml).replace("%%USERNAME%%", "${USERNAME_DEFAULT}") | Set-Content C:\vm_info\sqlserver.yaml
 (Get-Content C:\vm_info\sqlserver.yaml).replace("%%PASSWORD%%", "${PASSWORD_DEFAULT}") | Set-Content C:\vm_info\sqlserver.yaml
