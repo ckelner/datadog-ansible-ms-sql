@@ -23,7 +23,7 @@ Write-Host "Installing DD-agent"
 # Write-Host "api_key: $DD_API_KEY"
 
 # Install Datadog Agent
-msiexec /i C:\vm_info\ddagent-cli-latest.msi /l*v C:\vm_info\installation_log.txt /quiet APIKEY="$DD_API_KEY"
+msiexec /i C:\vm_info\ddagent-cli-latest.msi /l*v C:\vm_info\installation_log.txt /quiet APIKEY=`"$DD_API_KEY`"
 
 # wait to let the installation complete--should only be a few seconds.
 Write-Host "Sleep until agent is fully installed"
