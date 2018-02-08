@@ -1,0 +1,5 @@
+- name: test script module
+  hosts: tmobile-manual
+  tasks:
+    - name: run test script
+      script: files/test_script.ps1
