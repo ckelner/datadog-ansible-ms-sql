@@ -45,3 +45,12 @@ Test the connectivity to these servers: `ansible <inventory-group-name> -i <inve
 
 # Generate Load
 - https://github.com/ErikEJ/SqlQueryStress
+- https://www.brentozar.com/archive/2015/05/how-to-fake-load-tests-with-sqlquerystress/
+- http://use-the-index-luke.com/sql/example-schema/sql-server/performance-testing-scalability
+
+# Links
+- https://gist.github.com/ckelner/c14812e83e5d78eac62c7e99c15c79af
+- https://docs.datadoghq.com/integrations/faq/can-i-collect-sql-server-performance-metrics-beyond-what-is-available-in-the-sys-dm-os-performance-counters-table-try-wmi/
+- https://docs.datadoghq.com/integrations/faq/how-to-retrieve-wmi-metrics/
+- https://docs.datadoghq.com/integrations/faq/how-can-i-collect-more-metrics-from-my-sql-server-integration/
+- http://wutils.com/wmi/root/cimv2/win32_perfformatteddata/
